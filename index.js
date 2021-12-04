@@ -31,7 +31,7 @@ const questions = inquirer
          type: "list",
          name: "licenseList",
          message: "Choose the license that you would like to attach to your project.",
-         choices: ["MIT License", "Apache License 2.0", "Mozilla Public License 2.0", "GPL" ]
+         choices: ["MIT License", "Apache License 2.0", "Mozilla Public License 2.0", "GNU GPL V3" ]
      },
     {
          type: "input",
