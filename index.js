@@ -55,8 +55,13 @@ const questions = inquirer
      },
 
  ])
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
+
+.then((data)=> {
+    writeToFile(data);
+});
+
+// Function that writes README file
+function writeToFile(data) {
     fs.writeFile('NewREADME.md', generateMarkdown(data), (err) =>
     err ? console.error(err) : console.log("Success!")
     );
