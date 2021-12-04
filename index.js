@@ -2,10 +2,11 @@
 const inquirer = require("inquirer");
 const generateMarkdown = require('./utils/generateMarkdown');
 const fs= require("fs");
-const questions = inquirer
+
 
 // Array of questions
- .prompt([
+const questions = () => {
+    return inquirer.prompt([
      {
          type: "input",
          name: "projectTitle",
@@ -29,7 +30,7 @@ const questions = inquirer
      },
      {
          type: "list",
-         name: "licenseList",
+         name: "license",
          message: "Choose the license that you would like to attach to your project.",
          choices: ["MIT License", "Apache License 2.0", "Mozilla Public License 2.0", "GNU GPL V3" ]
      },
@@ -55,14 +56,10 @@ const questions = inquirer
      },
 
  ])
-
-.then((data)=> {
-    writeToFile(data);
-});
-
+};
 // Function that writes README file
 function writeToFile(data) {
-    fs.writeFile('NewREADME.md', generateMarkdown(data), (err) =>
+    fs.writeFile('exampleREADME.md', generateMarkdown(data), (err) =>
     err ? console.error(err) : console.log("Success!")
     );
 };
@@ -71,8 +68,7 @@ function writeToFile(data) {
 const init = () => {
     questions()
     .then((data) => writeToFile(data))
-    .catch((err) => connsnole.error(err));
+    .catch((err) => console.error(err));
 };
-
 // Function call to initialize app
 init();
