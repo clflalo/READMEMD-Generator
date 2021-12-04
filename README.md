@@ -2,7 +2,7 @@
 
 ## Description
 
-- This application is degigned to create a README file using the terminals command line.
+- This application is designed to create a README file using the terminals command line.
 - Learned how to make a readme file generator using inquirer
 - Currently incomplete
 

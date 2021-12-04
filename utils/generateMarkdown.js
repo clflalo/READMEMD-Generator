@@ -30,9 +30,10 @@ ${data.description}
 ## Table of Contents
 
 
-## Tests
+## Contributers
 
-* ${data.test}
+${data.contributers}
+
 
 GitHub: [${data.username}](https://github.com/${data.username})
 
