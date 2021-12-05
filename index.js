@@ -9,7 +9,7 @@ const questions = () => {
     return inquirer.prompt([
      {
          type: "input",
-         name: "projectTitle",
+         name: "title",
          message: "What is the project title?"
      },
      {
@@ -19,8 +19,8 @@ const questions = () => {
      },
      {
         type: "input",
-        name: "purposeInfo",
-        message: "What is the purpose of this project? " 
+        name: "usage",
+        message: "What is the purpose and what is the usage of this project? " 
      },
      
      {
@@ -49,12 +49,6 @@ const questions = () => {
          name: "username",
          message: "Please enter your Github UserName."
      },
-     {
-         type: "input",
-         name: "repo",
-         message: "Please paste a URL to your Github main page."
-     },
-
  ])
 };
 // Function that writes README file
