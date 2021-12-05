@@ -25,14 +25,19 @@ function generateMarkdown(data) {
 
 ## Table of Contents
 -[Description](#Description)
--[Contributers](#Contributers)
 -[Usage](#Usage)
+-[Contributers](#Contributers)
 -[License](#License)
 -[Questions](#Questions)
+
 
 ## Description
 
 ${data.description}
+
+## Usage
+
+${data.usage}
 
 ## Contributers
 
@@ -40,9 +45,7 @@ ${data.contributers}
 
 
 
-
 ## License 
--${data.license}
 -${renderLicenseBadge(data.license)}
 
 ## Questions
