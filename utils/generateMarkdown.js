@@ -19,23 +19,38 @@ function renderLicenseBadge(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-## License 
--${data.license}
--${renderLicenseBadge(data.license)}
+
+
+
+
+## Table of Contents
+-[Description](#Description)
+-[Contributers](#Contributers)
+-[Usage](#Usage)
+-[License](#License)
+-[Questions](#Questions)
 
 ## Description
 
 ${data.description}
-
-## Table of Contents
-
 
 ## Contributers
 
 ${data.contributers}
 
 
-GitHub: [${data.username}](https://github.com/${data.username})
+
+
+## License 
+-${data.license}
+-${renderLicenseBadge(data.license)}
+
+## Questions
+
+Have questions about this application? Reach me here :
+
+-GitHub: [${data.username}](https://github.com/${data.username})
+-Email : ${data.email}
 
 `;
 }
