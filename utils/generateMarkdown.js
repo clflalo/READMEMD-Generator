@@ -24,11 +24,11 @@ function generateMarkdown(data) {
 
 
 ## Table of Contents
--[Description](#Description)
--[Usage](#Usage)
--[Contributers](#Contributers)
--[License](#License)
--[Questions](#Questions)
+- [Description](#Description)
+- [Usage](#Usage)
+- [Contributers](#Contributers)
+- [License](#License)
+- [Questions](#Questions)
 
 
 ## Description
@@ -46,14 +46,14 @@ ${data.contributers}
 
 
 ## License 
--${renderLicenseBadge(data.license)}
+${renderLicenseBadge(data.license)}
 
 ## Questions
 
 Have questions about this application? Reach me here :
 
--GitHub: [${data.username}](https://github.com/${data.username})
--Email : ${data.email}
+- GitHub: [${data.username}](https://github.com/${data.username})
+- Email : ${data.email}
 
 `;
 }
