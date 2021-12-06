@@ -1,18 +1,23 @@
-# ReadMe Generator
+# README Generator
 
 
 
 
 ## Table of Contents
 -[Description](#Description)
--[Contributers](#Contributers)
 -[Usage](#Usage)
+-[Contributers](#Contributers)
 -[License](#License)
 -[Questions](#Questions)
 
+
 ## Description
 
-Project created a readme document by using the command terminal
+This project is made to create a readme document using the command line in the terminal.
+
+## Usage
+
+No usage so far. May use for future repos.
 
 ## Contributers
 
@@ -20,10 +25,8 @@ Jesus Cifuentes
 
 
 
-
 ## License 
--MIT License
--
+-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ## Questions
 
